@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./mainRes.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Restoring Division</title>
+
+ <style>
+    body {background-color: #1a9988;}
+    
+    h1 {color: white;
+        font-family: 'Bungee Outline', cursive;
+       }
+    h2 {color: #1a9988;
+    font-family: 'Bungee Outline', cursive;
+    }
+    
+    h1{font-family: 'Merriweather', serif}
+    h2{font-family: 'Merriweather', serif}
+    
+    .form-group{
+        font-size: 25px;
+        font-family: 'Merriweather', serif}
+        next {
+        font-family: 'Texturina', serif;}
+    
+    
+    .jumbotron {
+        background-color :white;
+        color: #1a9988;
+    }
+    
+    .jumbotron {
+        outline: none !important;
+        border:3px solid black;
+        box-shadow: 1 1 5px #719ECE;
+    }
+    
+    .form-control{
+        font-size: 25px;
+        outline: none !important;
+        border:2px solid black;
+        box-shadow: 1 1 5px #719ECE;
+    }
+    
+    .divide{
+            font-size: 25px;
+            background : #1a9988;
+            color:white;
+            border : 1px solid black;
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px black;
+    }
+    
+    .divide:hover {
+            background: red;
+            color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px black;
+            text-shadow:none;
+    }
+    
+    .code {
+        color :white
+    }
+    
+    .divide {
+          padding-top: 5px;
+          padding-right: 50px;
+          padding-bottom: 5px;
+          padding-left: 50px
+          }
+    
+    table{
+          text-align: center;
+          border-collapse: separate;
+          border-spacing: 15px 0px;
+    }
+    
+    th{
+          text-align: center;
+          border-style: solid;
+          border-color: black;
+          border-width: 2px;
+    }
+    
+    td{
+          text-align: center;
+          border-style: solid;
+          border-color: black;
+          border-width: 2px;
+    
+    }
+    
+    .ressec{
+          font-family: 'Merriweather', serif;
+          font-weight: bold;
+          font-size: 40px;
+          color: white;
+          margin-top: 70px;
+    }
+    
+    .context {
+          font-family: 'Merriweather', serif;
+          color: white;
+          padding-bottom: 20px;
+    }
+    
+    
+    #results{
+          text-align: center;
+          border-collapse: separate;
+          border-spacing: 15px 2px;
+          color : white
+    }
+    
+    .butt{
+            font-size: 25px;
+            background : white;
+            color:#1a9988;
+            border : 1px solid black;
+            border-radius: 50px;
+            box-shadow: 1px 2px 5px black;
+    }
+    
+    .butt:hover {
+            background: red;
+            color: #1a9988;
+            border: 1px solid black;
+            border-radius: 50px;
+            box-shadow: 5px 5px 5px black;
+            text-shadow:none;
+    }
+    .butt {
+          padding-top: 5px;
+          padding-right: 50px;
+          padding-bottom: 5px;
+          padding-left: 50px
+          }
+          .tabb{
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 15px 2px;
+} 
+    
+    </style>  
+    </head> 
+    <body>
+    
+    
+    <div class = "container"><br>
+           <h1>Restoring Algorithm</h1>
+           <br>
+    
+            <div class = "jumbotron">
+                <h2 class="display-4">Enter Dividend and Divisor ....</h2>
+                <hr class="my-4">
+                <form>
+                    <div class="form-group">
+                    <label for="formGroupExampleInput">Dividend : </label>
+                    <input type="text"  class="form-control" id="formGroupExampleInput" name="divident" required ></div>
+                </form>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Divisor :  </label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" name="divisor" required >
+                        <br>
+                        <br>
+                        <input type="button" value="Run" class="divide" name="divide">
+                    </div>
+                    
+                </form>
+            </div>
+    </div>
+
+
+<center>
+        <h2 class="ressec">Steps are as follows :</h2>
+        <table id="results" class="tabb">
+            <thead>
+                <tr class="steps">
+                    <th class="step">Step</th>
+                    <th class="step">A</th>
+                    <th class="step">Q</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="emptyspace">
+            <p class="cpcontent"> &nbsp; &nbsp; &nbsp; &nbsp; </p>
+        </div>
+        <a href="main_index.html" ><button class="butt"><b>Back To Home Page</b></button></a><br><br></center>
+
+    </div>
+</body>
+</html>
